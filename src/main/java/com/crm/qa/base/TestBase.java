@@ -22,7 +22,6 @@ public class TestBase {
 	public static Properties prop;
 	public static EventFiringWebDriver e_driver;
 	public static WebEventListener eventListner;
-	
 
 	public TestBase() {
 
@@ -39,7 +38,8 @@ public class TestBase {
 
 	}
 
-	public static void initialization() throws IOException {
+	public static void initialization() /*throws IOException*/ {
+		try {
 			TestUtil.killProcess();
 			String browserName = prop.getProperty("browser");
 			if (browserName.equalsIgnoreCase("chrome")) {
@@ -53,19 +53,22 @@ public class TestBase {
 				options.setCapability("marionette", true);
 				driver = new FirefoxDriver();
 			}
-			
+
 			e_driver = new EventFiringWebDriver(driver);
 			eventListner = new WebEventListener();
 			e_driver.register(eventListner);
 			driver = e_driver;
-			
+
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
 			driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 			driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 
 			driver.get(prop.getProperty("url"));
-			
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
-		
+
+	}
+
 }

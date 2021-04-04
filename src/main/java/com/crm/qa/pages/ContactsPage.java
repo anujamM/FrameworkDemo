@@ -12,8 +12,8 @@ public class ContactsPage extends TestBase {
 	@FindBy(xpath = "//div[@id='dashboard-toolbar']/div[text() = 'Contacts']")
 	WebElement contactsLabel;
 	
-	@FindBy(xpath = "//button[contains(text(), 'New')]")
-	WebElement newButton;
+	@FindBy(xpath = "//button[contains(text(), 'Create')]")
+	WebElement createButton;
 	
 	public ContactsPage() {
 		PageFactory.initElements(driver, this);
@@ -23,8 +23,8 @@ public class ContactsPage extends TestBase {
 		return contactsLabel.isDisplayed();
 	}
 	
-	public CreateNewContactPage clickOnNewButton() {
-		newButton.click();
+	public CreateNewContactPage clickOnCreateButton() {
+		createButton.click();
 		return new CreateNewContactPage();
 	}
 }

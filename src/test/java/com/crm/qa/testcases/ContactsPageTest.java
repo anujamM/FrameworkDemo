@@ -40,7 +40,7 @@ public class ContactsPageTest extends TestBase {
 		contactsPage = homePage.clickOnContactsLink();
 		Assert.assertTrue(contactsPage.verifyContactsHeader(), "Contact header is not present. Test Failed!!!");
 		Thread.sleep(5000);
-		createNewContactPage = contactsPage.clickOnNewButton();
+		createNewContactPage = contactsPage.clickOnCreateButton();
 		Assert.assertTrue(createNewContactPage.verifyNewContactsHeader(),
 				"New Contact header is not present. Test Failed!!!");
 	}
@@ -55,7 +55,7 @@ public class ContactsPageTest extends TestBase {
 	public void validateCreateContactName(String fName, String mName, String lName, String email) throws InterruptedException {
 		contactsPage = homePage.clickOnContactsLink();
 		Thread.sleep(5000);
-		createNewContactPage = contactsPage.clickOnNewButton();
+		createNewContactPage = contactsPage.clickOnCreateButton();
 		Thread.sleep(5000);
 		createNewContactPage.enterContactDetails(fName, mName, lName, email);
 	}
