@@ -8,24 +8,7 @@
     <classes>
       <class name="com.crm.qa.testcases.LoginPageTest"/>
       <class name="com.crm.qa.testcases.HomePageTest"/>
+      <class name="com.crm.qa.testcases.ContactsPageTest"/>
     </classes>
   </test> <!-- Cogmento -->
-  <test name="Cogmento(failed)">
-    <classes>
-      <class name="com.crm.qa.testcases.LoginPageTest">
-        <methods>
-          <include name="setup"/>
-          <include name="loginToCRM"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.crm.qa.testcases.LoginPageTest -->
-      <class name="com.crm.qa.testcases.HomePageTest">
-        <methods>
-          <include name="verifyPageTitleTest"/>
-          <include name="setup"/>
-          <include name="verifyContactLinksTest"/>
-        </methods>
-      </class> <!-- com.crm.qa.testcases.HomePageTest -->
-    </classes>
-  </test> <!-- Cogmento(failed) -->
 </suite> <!-- Failed suite [myFramework] -->
