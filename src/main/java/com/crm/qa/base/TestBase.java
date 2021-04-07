@@ -38,7 +38,7 @@ public class TestBase {
 
 	}
 
-	public static void initialization() /*throws IOException*/ {
+	public static void initialization() /* throws IOException */ {
 		try {
 			TestUtil.killProcess();
 			String browserName = prop.getProperty("browser");
