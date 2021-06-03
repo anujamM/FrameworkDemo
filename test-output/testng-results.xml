@@ -1,55 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="8" passed="8">
+<testng-results skipped="4" failed="0" total="4" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="myFramework" duration-ms="155089" started-at="2021-04-07T10:57:43Z" finished-at="2021-04-07T11:00:18Z">
+  <suite name="Default suite" duration-ms="2542" started-at="2021-06-02T20:56:03Z" finished-at="2021-06-02T20:56:05Z">
     <groups>
     </groups>
-    <test name="Cogmento" duration-ms="155089" started-at="2021-04-07T10:57:43Z" finished-at="2021-04-07T11:00:18Z">
-      <class name="com.crm.qa.testcases.HomePageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.HomePageTest@32d992b2]" name="setup" is-config="true" duration-ms="11682" started-at="2021-04-07T16:28:07Z" finished-at="2021-04-07T16:28:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyPageTitleTest()[pri:1, instance:com.crm.qa.testcases.HomePageTest@32d992b2]" name="verifyPageTitleTest" duration-ms="835" started-at="2021-04-07T16:28:19Z" finished-at="2021-04-07T16:28:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPageTitleTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.crm.qa.testcases.HomePageTest@32d992b2]" name="teardown" is-config="true" duration-ms="1169" started-at="2021-04-07T16:28:20Z" finished-at="2021-04-07T16:28:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.HomePageTest@32d992b2]" name="setup" is-config="true" duration-ms="9109" started-at="2021-04-07T16:28:21Z" finished-at="2021-04-07T16:28:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyContactLinksTest()[pri:2, instance:com.crm.qa.testcases.HomePageTest@32d992b2]" name="verifyContactLinksTest" duration-ms="1026" started-at="2021-04-07T16:28:30Z" finished-at="2021-04-07T16:28:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyContactLinksTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.crm.qa.testcases.HomePageTest@32d992b2]" name="teardown" is-config="true" duration-ms="1199" started-at="2021-04-07T16:28:31Z" finished-at="2021-04-07T16:28:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.crm.qa.testcases.HomePageTest -->
+    <test name="Default test" duration-ms="2542" started-at="2021-06-02T20:56:03Z" finished-at="2021-06-02T20:56:05Z">
       <class name="com.crm.qa.testcases.ContactsPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@215be6bb]" name="setup" is-config="true" duration-ms="10809" started-at="2021-04-07T16:28:32Z" finished-at="2021-04-07T16:28:43Z">
+        <test-method status="FAIL" signature="setup()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@27f674d]" name="setup" is-config="true" duration-ms="0" started-at="2021-06-03T02:26:03Z" finished-at="2021-06-03T02:26:03Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+	at com.crm.qa.pages.LoginPage.login(LoginPage.java:34)
+	at com.crm.qa.testcases.ContactsPageTest.setup(ContactsPageTest.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyContactLinksTest()[pri:1, instance:com.crm.qa.testcases.ContactsPageTest@215be6bb]" name="verifyContactLinksTest" duration-ms="6701" started-at="2021-04-07T16:28:43Z" finished-at="2021-04-07T16:28:50Z">
+        <test-method status="SKIP" signature="verifyContactLinksTest()[pri:1, instance:com.crm.qa.testcases.ContactsPageTest@27f674d]" name="verifyContactLinksTest" duration-ms="1" started-at="2021-06-03T02:26:05Z" finished-at="2021-06-03T02:26:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyContactLinksTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@215be6bb]" name="teardown" is-config="true" duration-ms="1229" started-at="2021-04-07T16:28:50Z" finished-at="2021-04-07T16:28:51Z">
+        <test-method status="SKIP" signature="teardown()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@27f674d]" name="teardown" is-config="true" duration-ms="0" started-at="2021-06-03T02:26:05Z" finished-at="2021-06-03T02:26:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@215be6bb]" name="setup" is-config="true" duration-ms="9655" started-at="2021-04-07T16:28:52Z" finished-at="2021-04-07T16:29:02Z">
+        <test-method status="SKIP" signature="setup()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@27f674d]" name="setup" is-config="true" duration-ms="0" started-at="2021-06-03T02:26:05Z" finished-at="2021-06-03T02:26:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="validateCreateContactName(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.crm.qa.testcases.ContactsPageTest@215be6bb]" name="validateCreateContactName" duration-ms="15196" started-at="2021-04-07T16:29:02Z" data-provider="getExcelTestData" finished-at="2021-04-07T16:29:17Z">
+        <test-method status="SKIP" signature="validateCreateContactName(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.crm.qa.testcases.ContactsPageTest@27f674d]" name="validateCreateContactName" duration-ms="0" started-at="2021-06-03T02:26:05Z" data-provider="getExcelTestData" finished-at="2021-06-03T02:26:05Z">
           <params>
             <param index="0">
               <value>
@@ -75,15 +86,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateCreateContactName -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@215be6bb]" name="teardown" is-config="true" duration-ms="1177" started-at="2021-04-07T16:29:17Z" finished-at="2021-04-07T16:29:18Z">
+        <test-method status="SKIP" signature="teardown()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@27f674d]" name="teardown" is-config="true" duration-ms="0" started-at="2021-06-03T02:26:05Z" finished-at="2021-06-03T02:26:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@215be6bb]" name="setup" is-config="true" duration-ms="9684" started-at="2021-04-07T16:29:18Z" finished-at="2021-04-07T16:29:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="validateCreateContactName(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.crm.qa.testcases.ContactsPageTest@215be6bb]" name="validateCreateContactName" duration-ms="16081" started-at="2021-04-07T16:29:28Z" data-provider="getExcelTestData" finished-at="2021-04-07T16:29:44Z">
+        <test-method status="SKIP" signature="validateCreateContactName(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.crm.qa.testcases.ContactsPageTest@27f674d]" name="validateCreateContactName" duration-ms="1" started-at="2021-06-03T02:26:05Z" data-provider="getExcelTestData" finished-at="2021-06-03T02:26:05Z">
           <params>
             <param index="0">
               <value>
@@ -109,15 +116,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateCreateContactName -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@215be6bb]" name="teardown" is-config="true" duration-ms="1536" started-at="2021-04-07T16:29:44Z" finished-at="2021-04-07T16:29:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@215be6bb]" name="setup" is-config="true" duration-ms="13653" started-at="2021-04-07T16:29:45Z" finished-at="2021-04-07T16:29:59Z">
+        <test-method status="SKIP" signature="setup()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@27f674d]" name="setup" is-config="true" duration-ms="0" started-at="2021-06-03T02:26:05Z" finished-at="2021-06-03T02:26:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="validateCreateContactName(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.crm.qa.testcases.ContactsPageTest@215be6bb]" name="validateCreateContactName" duration-ms="17676" started-at="2021-04-07T16:29:59Z" data-provider="getExcelTestData" finished-at="2021-04-07T16:30:17Z">
+        <test-method status="SKIP" signature="teardown()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@27f674d]" name="teardown" is-config="true" duration-ms="0" started-at="2021-06-03T02:26:05Z" finished-at="2021-06-03T02:26:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="validateCreateContactName(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.crm.qa.testcases.ContactsPageTest@27f674d]" name="validateCreateContactName" duration-ms="1" started-at="2021-06-03T02:26:05Z" data-provider="getExcelTestData" finished-at="2021-06-03T02:26:05Z">
           <params>
             <param index="0">
               <value>
@@ -143,37 +150,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateCreateContactName -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@215be6bb]" name="teardown" is-config="true" duration-ms="1329" started-at="2021-04-07T16:30:17Z" finished-at="2021-04-07T16:30:18Z">
+        <test-method status="SKIP" signature="setup()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@27f674d]" name="setup" is-config="true" duration-ms="0" started-at="2021-06-03T02:26:05Z" finished-at="2021-06-03T02:26:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="teardown()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@27f674d]" name="teardown" is-config="true" duration-ms="0" started-at="2021-06-03T02:26:05Z" finished-at="2021-06-03T02:26:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.crm.qa.testcases.ContactsPageTest -->
-      <class name="com.crm.qa.testcases.LoginPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@1810399e]" name="setup" is-config="true" duration-ms="11122" started-at="2021-04-07T16:27:43Z" finished-at="2021-04-07T16:27:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.crm.qa.testcases.LoginPageTest@1810399e]" name="loginPageTitleTest" duration-ms="14" started-at="2021-04-07T16:27:54Z" finished-at="2021-04-07T16:27:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginPageTitleTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@1810399e]" name="teardown" is-config="true" duration-ms="1310" started-at="2021-04-07T16:27:54Z" finished-at="2021-04-07T16:27:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@1810399e]" name="setup" is-config="true" duration-ms="10032" started-at="2021-04-07T16:27:55Z" finished-at="2021-04-07T16:28:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginToCRM()[pri:2, instance:com.crm.qa.testcases.LoginPageTest@1810399e]" name="loginToCRM" duration-ms="1736" started-at="2021-04-07T16:28:06Z" finished-at="2021-04-07T16:28:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToCRM -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@1810399e]" name="teardown" is-config="true" duration-ms="0" started-at="2021-04-07T16:28:07Z" finished-at="2021-04-07T16:28:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.crm.qa.testcases.LoginPageTest -->
-    </test> <!-- Cogmento -->
-  </suite> <!-- myFramework -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

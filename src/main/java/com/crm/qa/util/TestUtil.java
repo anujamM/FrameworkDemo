@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Iterator;
 import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
@@ -53,7 +54,15 @@ public class TestUtil extends TestBase {
 		int numberOfWindows = windHandles.size();
 		System.out.println(numberOfWindows);
 		return numberOfWindows;
-
+		
+//		Iterator<String> it = windHandles.iterator();
+//		for(int i=0; it.hasNext(); i++) {
+//			String str = it.next();
+//			if(i == 2) {
+//				driver.switchTo().window(str);
+//			}
+//		}
+		
 	}
 
 	public void switchToSettingsFrame() {

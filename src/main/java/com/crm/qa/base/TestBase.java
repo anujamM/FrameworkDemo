@@ -3,15 +3,17 @@ package com.crm.qa.base;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.crm.qa.util.TestUtil;
 import com.crm.qa.util.WebEventListener;
@@ -65,6 +67,11 @@ public class TestBase {
 			driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 
 			driver.get(prop.getProperty("url"));
+			
+			
+			WebDriverWait wait = new WebDriverWait(driver, TestUtil.PAGE_LOAD_TIMEOUT);
+//			wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.partialLinkText("here"))));
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

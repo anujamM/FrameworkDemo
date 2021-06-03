@@ -48,6 +48,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
 
 public class TestClass {
 	public static WebDriver driver;
@@ -68,6 +72,17 @@ public class TestClass {
 		driver.findElement(By.xpath(("//a[text() = 'Hot Meals ']"))).click();
 		// acts.moveToElement(driver.findElement(By.xpath("//a[text() = 'Hot Meals
 		// ']"))).click().build().perform();
-
+		
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("")));
+		
+		driver.findElement(By.xpath("")).click();
+		
+		SoftAssert soft = new SoftAssert();
+		
+		
+		
 	}
 }
