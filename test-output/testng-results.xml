@@ -2,36 +2,36 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="myFramework" duration-ms="13529" started-at="2021-07-09T14:35:05Z" finished-at="2021-07-09T14:35:18Z">
+  <suite name="Default suite" duration-ms="13323" started-at="2021-07-09T14:46:08Z" finished-at="2021-07-09T14:46:22Z">
     <groups>
     </groups>
-    <test name="Cogmento" duration-ms="13529" started-at="2021-07-09T14:35:05Z" finished-at="2021-07-09T14:35:18Z">
+    <test name="Default test" duration-ms="13323" started-at="2021-07-09T14:46:08Z" finished-at="2021-07-09T14:46:22Z">
       <class name="com.crm.qa.testcases.LoginPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@7ac7a4e4]" name="setup" is-config="true" duration-ms="3816" started-at="2021-07-09T20:05:05Z" finished-at="2021-07-09T20:05:09Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@50f8360d]" name="setup" is-config="true" duration-ms="3779" started-at="2021-07-09T20:16:08Z" finished-at="2021-07-09T20:16:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.crm.qa.testcases.LoginPageTest@7ac7a4e4]" name="loginPageTitleTest" duration-ms="11" started-at="2021-07-09T20:05:09Z" finished-at="2021-07-09T20:05:09Z">
+        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.crm.qa.testcases.LoginPageTest@50f8360d]" name="loginPageTitleTest" duration-ms="15" started-at="2021-07-09T20:16:12Z" finished-at="2021-07-09T20:16:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@7ac7a4e4]" name="teardown" is-config="true" duration-ms="1184" started-at="2021-07-09T20:05:09Z" finished-at="2021-07-09T20:05:10Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@50f8360d]" name="teardown" is-config="true" duration-ms="1251" started-at="2021-07-09T20:16:12Z" finished-at="2021-07-09T20:16:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@7ac7a4e4]" name="setup" is-config="true" duration-ms="3626" started-at="2021-07-09T20:05:10Z" finished-at="2021-07-09T20:05:13Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@50f8360d]" name="setup" is-config="true" duration-ms="3515" started-at="2021-07-09T20:16:13Z" finished-at="2021-07-09T20:16:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginToCRM()[pri:2, instance:com.crm.qa.testcases.LoginPageTest@7ac7a4e4]" name="loginToCRM" duration-ms="4876" started-at="2021-07-09T20:05:13Z" finished-at="2021-07-09T20:05:18Z">
+        <test-method status="PASS" signature="loginToCRM()[pri:2, instance:com.crm.qa.testcases.LoginPageTest@50f8360d]" name="loginToCRM" duration-ms="4748" started-at="2021-07-09T20:16:17Z" finished-at="2021-07-09T20:16:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToCRM -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@7ac7a4e4]" name="teardown" is-config="true" duration-ms="0" started-at="2021-07-09T20:05:18Z" finished-at="2021-07-09T20:05:18Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@50f8360d]" name="teardown" is-config="true" duration-ms="0" started-at="2021-07-09T20:16:22Z" finished-at="2021-07-09T20:16:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.crm.qa.testcases.LoginPageTest -->
-    </test> <!-- Cogmento -->
-  </suite> <!-- myFramework -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
