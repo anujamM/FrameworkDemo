@@ -46,11 +46,11 @@ public class TestBase {
 			String browserName = prop.getProperty("browser");
 			if (browserName.equalsIgnoreCase("chrome")) {
 				System.setProperty("webdriver.chrome.driver",
-						"C:\\Eclipse_Oxy\\Drivers\\chromedriver_win32\\chromedriver.exe");
+						"C:/Eclipse_Oxy/Drivers/chromedriver_win32/chromedriver.exe");
 				driver = new ChromeDriver();
 			} else if (browserName.equalsIgnoreCase("firefox")) {
 
-				System.setProperty("webdriver.gecko.driver", "C:\\Eclipse_Oxy\\Drivers\\geckodriver\\geckodriver.exe");
+				System.setProperty("webdriver.gecko.driver", "C:/Eclipse_Oxy/Drivers/geckodriver/geckodriver.exe");
 				FirefoxOptions options = new FirefoxOptions();
 				options.setCapability("marionette", true);
 				driver = new FirefoxDriver();
@@ -71,6 +71,7 @@ public class TestBase {
 			
 			WebDriverWait wait = new WebDriverWait(driver, TestUtil.PAGE_LOAD_TIMEOUT);
 //			wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.partialLinkText("here"))));
+//			driver.switchTo().frame(index)
 			
 		} catch (Exception e) {
 			e.printStackTrace();
