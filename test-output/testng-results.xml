@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="myFramework" duration-ms="13977" started-at="2021-07-09T15:34:21Z" finished-at="2021-07-09T15:34:35Z">
+  <suite name="myFramework" duration-ms="14166" started-at="2021-07-09T16:19:01Z" finished-at="2021-07-09T16:19:16Z">
     <groups>
     </groups>
-    <test name="Cogmento" duration-ms="13977" started-at="2021-07-09T15:34:21Z" finished-at="2021-07-09T15:34:35Z">
+    <test name="Cogmento" duration-ms="14166" started-at="2021-07-09T16:19:01Z" finished-at="2021-07-09T16:19:16Z">
       <class name="com.crm.qa.testcases.LoginPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@7ac7a4e4]" name="setup" is-config="true" duration-ms="3875" started-at="2021-07-09T21:04:21Z" finished-at="2021-07-09T21:04:25Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@7ac7a4e4]" name="setup" is-config="true" duration-ms="4340" started-at="2021-07-09T21:49:01Z" finished-at="2021-07-09T21:49:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.crm.qa.testcases.LoginPageTest@7ac7a4e4]" name="loginPageTitleTest" duration-ms="9" started-at="2021-07-09T21:04:25Z" finished-at="2021-07-09T21:04:25Z">
+        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.crm.qa.testcases.LoginPageTest@7ac7a4e4]" name="loginPageTitleTest" duration-ms="14" started-at="2021-07-09T21:49:06Z" finished-at="2021-07-09T21:49:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@7ac7a4e4]" name="teardown" is-config="true" duration-ms="1256" started-at="2021-07-09T21:04:25Z" finished-at="2021-07-09T21:04:26Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@7ac7a4e4]" name="teardown" is-config="true" duration-ms="1299" started-at="2021-07-09T21:49:06Z" finished-at="2021-07-09T21:49:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@7ac7a4e4]" name="setup" is-config="true" duration-ms="4017" started-at="2021-07-09T21:04:26Z" finished-at="2021-07-09T21:04:30Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@7ac7a4e4]" name="setup" is-config="true" duration-ms="3750" started-at="2021-07-09T21:49:07Z" finished-at="2021-07-09T21:49:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginToCRM()[pri:2, instance:com.crm.qa.testcases.LoginPageTest@7ac7a4e4]" name="loginToCRM" duration-ms="4801" started-at="2021-07-09T21:04:30Z" finished-at="2021-07-09T21:04:35Z">
+        <test-method status="PASS" signature="loginToCRM()[pri:2, instance:com.crm.qa.testcases.LoginPageTest@7ac7a4e4]" name="loginToCRM" duration-ms="4747" started-at="2021-07-09T21:49:11Z" finished-at="2021-07-09T21:49:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToCRM -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@7ac7a4e4]" name="teardown" is-config="true" duration-ms="1" started-at="2021-07-09T21:04:35Z" finished-at="2021-07-09T21:04:35Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@7ac7a4e4]" name="teardown" is-config="true" duration-ms="0" started-at="2021-07-09T21:49:16Z" finished-at="2021-07-09T21:49:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
