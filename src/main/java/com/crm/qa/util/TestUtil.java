@@ -50,12 +50,12 @@ public class TestUtil extends TestBase {
 	}
 
 	public static int windCount(WebDriver driver) {
-		Set<String> windHandles = driver.getWindowHandles();
-		int numberOfWindows = windHandles.size();
+		String parent = driver.getWindowHandle();
+		Set<String> allWindows = driver.getWindowHandles();
+		int numberOfWindows = allWindows.size();
 		System.out.println(numberOfWindows);
-		return numberOfWindows;
 		
-//		Iterator<String> it = windHandles.iterator();
+		Iterator<String> it = allWindows.iterator();
 //		for(int i=0; it.hasNext(); i++) {
 //			String str = it.next();
 //			if(i == 2) {
@@ -63,6 +63,17 @@ public class TestUtil extends TestBase {
 //			}
 //		}
 		
+		while(it.hasNext()) {
+			String child = it.next();
+			
+			if(!parent.equals(child)) {
+				System.out.println(driver.switchTo().window(child).getTitle());
+			}
+		}
+		
+		//Switch to parent window
+		driver.switchTo().window(parent).getCurrentUrl();
+		return numberOfWindows;
 	}
 
 	public void switchToSettingsFrame() {
