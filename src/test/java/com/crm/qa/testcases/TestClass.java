@@ -82,7 +82,9 @@ public class TestClass {
 		
 		SoftAssert soft = new SoftAssert();
 		
+		driver.switchTo().parentFrame();
+		driver.switchTo().defaultContent();
 		
-		
+		driver.switchTo().alert();
 	}
 }
