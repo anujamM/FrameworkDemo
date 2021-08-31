@@ -57,7 +57,7 @@ public class TestClass {
 	public static WebDriver driver;
 
 	public static void main(String args[]) throws InterruptedException {
-		System.setProperty("webdriver.gecko.driver", "C:\\Eclipse_Oxy\\Drivers\\geckodriver\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "C:/Eclipse_Oxy/Drivers/geckodriver/geckodriver.exe");
 		FirefoxOptions options = new FirefoxOptions();
 		options.setCapability("marionette", true);
 		driver = new FirefoxDriver();
