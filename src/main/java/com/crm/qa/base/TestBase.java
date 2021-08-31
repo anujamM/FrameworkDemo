@@ -46,11 +46,11 @@ public class TestBase {
 			String browserName = prop.getProperty("browser");
 			if (browserName.equalsIgnoreCase("chrome")) {
 				System.setProperty("webdriver.chrome.driver",
-						"C:/Eclipse_Oxy/Drivers/chromedriver_win32/chromedriver.exe");
+						System.getProperty("user.dir") + "/drivers/chrome_driver/chromedriver.exe");
 				driver = new ChromeDriver();
 			} else if (browserName.equalsIgnoreCase("firefox")) {
 
-				System.setProperty("webdriver.gecko.driver", "C:/Eclipse_Oxy/Drivers/geckodriver/geckodriver.exe");
+				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/drivers/firefox_driver/geckodriver.exe");
 				FirefoxOptions options = new FirefoxOptions();
 				options.setCapability("marionette", true);
 				driver = new FirefoxDriver();
